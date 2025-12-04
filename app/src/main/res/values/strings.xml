@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Maze Bank</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="transfer">Transferencia</string>
+    <string name="investments">Inversiones</string>
+    <string name="loan">Préstamo</string>
+</resources>
