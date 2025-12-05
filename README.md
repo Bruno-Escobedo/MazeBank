@@ -9,8 +9,6 @@
 ![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github\&logoColor=white)
 ![Retrofit](https://img.shields.io/badge/Retrofit-007ACC?logo=java\&logoColor=white)
 ![MVVM](https://img.shields.io/badge/MVVM-6A1B9A?logo=architecture\&logoColor=white)
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
 
 **Aplicación Bancaria Móvil — Kotlin + Jetpack Compose**
 
@@ -51,8 +49,9 @@ Su objetivo es simular la experiencia moderna de una banca digital: autenticaci�
 
 ## 🌐 Backend / API
 
-* Base URL: `https://tu-backend.com/api` <!-- reemplaza con tu backend -->
+* Base URL: `https://tu-backend.com/api`
 * Endpoints principales: `/login`, `/transfer`, `/loans`
+* Documentación: [API Docs](https://tu-backend.com/docs)
 
 ---
 
@@ -131,6 +130,20 @@ Su objetivo es simular la experiencia moderna de una banca digital: autenticaci�
     └── test/                                  # 🧪 Pruebas unitarias
             ExampleUnitTest.kt
 ```
+
+---
+
+## 📦 APK
+
+Puedes descargar el APK funcional para instalar en dispositivos Android desde el repo:
+
+* [APK de MazeBank](release/MazeBank-debug.apk)
+
+Para instalar:
+
+1. Descarga el APK.
+2. Habilita “Instalación desde fuentes desconocidas” en tu dispositivo Android.
+3. Abre el APK y sigue las instrucciones de instalación.
 
 ---
 
