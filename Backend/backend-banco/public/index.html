@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Banco - Registro y Login</title>
+</head>
+<body>
+    <h1>Registro</h1>
+    <form id="registerForm">
+        <input type="text" name="nombre" placeholder="Nombre" required /><br/>
+        <input type="email" name="correo" placeholder="Correo" required /><br/>
+        <input type="text" name="telefono" placeholder="Teléfono" required /><br/>
+        <input type="password" name="password" placeholder="Contraseña" required /><br/>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h1>Login</h1>
+    <form id="loginForm">
+        <input type="email" name="correo" placeholder="Correo" required /><br/>
+        <input type="password" name="password" placeholder="Contraseña" required /><br/>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <pre id="result"></pre>
+
+    <script>
+        const result = document.getElementById('result');
+
+        // Registro
+        document.getElementById('registerForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            const res = await fetch('/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const json = await res.json();
+            result.textContent = JSON.stringify(json, null, 2);
+        });
+
+        // Login
+        document.getElementById('loginForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            const res = await fetch('/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            });
+            const json = await res.json();
+            result.textContent = JSON.stringify(json, null, 2);
+        });
+    </script>
+</body>
+</html>
