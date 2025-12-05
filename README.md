@@ -10,6 +10,20 @@
 ![Retrofit](https://img.shields.io/badge/Retrofit-007ACC?logo=java\&logoColor=white)
 ![MVVM](https://img.shields.io/badge/MVVM-6A1B9A?logo=architecture\&logoColor=white)
 
+---
+
+## 🎓 Información Académica
+
+**🏫 Universidad:** Unitec Campus Sur
+**📚 Materia:** Aplicaciones Móviles
+**👥 Equipo de Trabajo:**
+
+* Escobedo Negrete Bruno Uriel
+* Parra Bautista Santiago
+* Ramos Valencia Lorena
+
+---
+
 **Aplicación Bancaria Móvil — Kotlin + Jetpack Compose**
 
 MazeBank es una aplicación móvil desarrollada en **Kotlin** utilizando **Jetpack Compose**, conectada a un backend en **Node.js + MariaDB**.
@@ -44,14 +58,6 @@ Su objetivo es simular la experiencia moderna de una banca digital: autenticaci�
 * **Pruebas:** JUnit, Android Instrumented Tests
 * **Control de versiones:** Git · GitHub
 * **IDE:** Android Studio
-
----
-
-## 🌐 Backend / API
-
-* Base URL: `https://tu-backend.com/api`
-* Endpoints principales: `/login`, `/transfer`, `/loans`
-* Documentación: [API Docs](https://tu-backend.com/docs)
 
 ---
 
@@ -159,14 +165,6 @@ Para instalar:
 4. Configura tu URL del backend en:
    `data/network/RetrofitInstance.kt`
 5. Ejecuta la app en un emulador o dispositivo físico.
-
----
-
-## 👥 Autores
-
-* **Escobedo Negrete Bruno Uriel**
-* **Parra Bautista Santiago**
-* **Ramos Valencia Lorena**
 
 ---
 
